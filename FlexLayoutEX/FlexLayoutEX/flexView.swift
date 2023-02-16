@@ -61,7 +61,8 @@ class FlexView: UIView {
                 flex.addItem().backgroundColor(.green).width(10).height(10)
             }
             
-            
+            // justifyContent -> 수직 정렬을 제어
+            // alignItems -> 수평 정렬을 제어
             flex.addItem().size(100).backgroundColor(.yellow).alignItems(.center).justifyContent(.center).define { flex in
                 flex.addItem().backgroundColor(.green).width(10).height(10)
                 flex.addItem().backgroundColor(.black).width(10).height(10)
@@ -78,7 +79,7 @@ class FlexView: UIView {
 
         flexContainer.pin.top(100).left(30).right(30).bottom(100)
         
-        flexContainer.flex.layout()
+        flexContainer.flex.layout(mode: .adjustHeight)
     }
 }
 
