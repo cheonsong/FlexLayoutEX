@@ -67,6 +67,14 @@ class FlexView: UIView {
                 flex.addItem().backgroundColor(.green).width(10).height(10)
                 flex.addItem().backgroundColor(.black).width(10).height(10)
             }
+            
+            // noWrap -> 감싸지 않는다
+            // wrap -> 컨테이너에 감싼다
+            // wrapReverse -> 컨테이너에 감싸는데 순서를 역전시킨다.
+            flex.addItem().backgroundColor(.black).direction(.row).wrap(.wrap).define { flex in
+                flex.addItem().backgroundColor(.red).width(200).height(20)
+                flex.addItem().backgroundColor(.blue).width(200).height(20)
+            }
         }
     }
     
