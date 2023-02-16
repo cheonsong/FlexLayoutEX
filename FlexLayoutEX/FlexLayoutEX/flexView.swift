@@ -52,7 +52,12 @@ class FlexView: UIView {
                 flex.addItem(label4)
             }
             
-            flex.addItem().width(100).height(100).backgroundColor(.red)
+            // margin은 바깥쪽
+            // padding은 안쪽
+            // border를 기준으로 나뉨
+            flex.addItem().width(100).height(100).backgroundColor(.red).margin(50).padding(50).define { flex in
+                flex.addItem().backgroundColor(.green).width(10).height(10)
+            }
         }
     }
     
