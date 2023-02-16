@@ -18,6 +18,7 @@
 		E858B5A7299A15AF007BB997 /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = E858B5A6299A15AF007BB997 /* FlexLayout */; };
 		E858B5A9299A1A3D007BB997 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858B5A8299A1A3D007BB997 /* BaseViewController.swift */; };
 		E858B5AC299A1CBD007BB997 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = E858B5AB299A1CBD007BB997 /* PinLayout */; };
+		E858B5AE299A1FB3007BB997 /* flexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858B5AD299A1FB3007BB997 /* flexView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E858B596299A1526007BB997 /* FlexLayoutEXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutEXUITests.swift; sourceTree = "<group>"; };
 		E858B598299A1526007BB997 /* FlexLayoutEXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutEXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E858B5A8299A1A3D007BB997 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E858B5AD299A1FB3007BB997 /* flexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flexView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E858B580299A1525007BB997 /* LaunchScreen.storyboard */,
 				E858B583299A1525007BB997 /* Info.plist */,
 				E858B5A8299A1A3D007BB997 /* BaseViewController.swift */,
+				E858B5AD299A1FB3007BB997 /* flexView.swift */,
 			);
 			path = FlexLayoutEX;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E858B57A299A1524007BB997 /* ViewController.swift in Sources */,
+				E858B5AE299A1FB3007BB997 /* flexView.swift in Sources */,
 				E858B5A9299A1A3D007BB997 /* BaseViewController.swift in Sources */,
 				E858B576299A1524007BB997 /* AppDelegate.swift in Sources */,
 				E858B578299A1524007BB997 /* SceneDelegate.swift in Sources */,
@@ -364,6 +368,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "FLEXLAYOUT_SWIFT_PACKAGE=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -418,6 +423,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "FLEXLAYOUT_SWIFT_PACKAGE=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
