@@ -40,10 +40,12 @@ class FlexView: UIView {
         super.init(frame: frame)
         
         addSubview(flexContainer)
+        flexContainer.backgroundColor = .brown
         
         flexContainer.flex.direction(.column).define { flex in
             flex.addItem().backgroundColor(.blue).direction(.column).define { flex in
-                flex.addItem(label1)
+                //
+                flex.addItem(label1).alignSelf(.center)
                 flex.addItem(label2)
             }
             
@@ -55,8 +57,14 @@ class FlexView: UIView {
             // margin은 바깥쪽
             // padding은 안쪽
             // border를 기준으로 나뉨
-            flex.addItem().width(100).height(100).backgroundColor(.red).margin(50).padding(50).define { flex in
+            flex.addItem().size(100).backgroundColor(.red).define { flex in
                 flex.addItem().backgroundColor(.green).width(10).height(10)
+            }
+            
+            
+            flex.addItem().size(100).backgroundColor(.yellow).alignItems(.center).justifyContent(.center).define { flex in
+                flex.addItem().backgroundColor(.green).width(10).height(10)
+                flex.addItem().backgroundColor(.black).width(10).height(10)
             }
         }
     }
