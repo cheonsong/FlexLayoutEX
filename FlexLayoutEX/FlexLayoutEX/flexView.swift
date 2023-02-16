@@ -42,15 +42,17 @@ class FlexView: UIView {
         addSubview(flexContainer)
         
         flexContainer.flex.direction(.column).define { flex in
-            flex.addItem().direction(.column).define { flex in
+            flex.addItem().backgroundColor(.blue).direction(.column).define { flex in
                 flex.addItem(label1)
                 flex.addItem(label2)
-            }.grow(1)
+            }
             
-            flex.addItem().direction(.row).define { flex in
+            flex.addItem().backgroundColor(.gray).direction(.row).define { flex in
                 flex.addItem(label3)
                 flex.addItem(label4)
             }
+            
+            flex.addItem().width(100).height(100).backgroundColor(.red)
         }
     }
     
